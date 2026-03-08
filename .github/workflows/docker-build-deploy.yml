@@ -1,0 +1,15 @@
+name: Docker Build and Deploy
+
+on:
+  push:
+
+jobs:
+  Build-Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Git Checkout"
+        uses: actions/checkout@v6
+        with:
+          repository: 'sunnyjindal1998/docker'
+          ref: 'main'
+          path: 'docker-code'
