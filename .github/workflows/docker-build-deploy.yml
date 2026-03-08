@@ -13,3 +13,6 @@ jobs:
           repository: 'sunnyjindal1998/docker'
           ref: 'main'
           path: 'docker-code'
+
+      - name: "Print checkout files"
+        run: ls
