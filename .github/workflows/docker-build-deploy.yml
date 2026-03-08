@@ -15,4 +15,6 @@ jobs:
           path: 'docker-code'
 
       - name: "Print checkout files"
-        run: ls
+        run: |
+          cd docker-code
+          ls
