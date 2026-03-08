@@ -14,7 +14,8 @@ jobs:
           ref: 'main'
           path: 'docker-code'
 
-      - name: "Print checkout files"
+      - name: "Build docker image"
         run: |
           cd docker-code
-          ls
+          docker build -t my-app .
+          docker image ls
